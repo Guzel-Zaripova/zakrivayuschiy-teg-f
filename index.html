@@ -540,13 +540,11 @@
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <p class="pop-up-paragraph">Вставьте дискету, чтобы продолжить</p>
-        <button
-          type="button"
-          class="button pop-up-button"
-          onclick="window['pop-up-dialog'].close()"
-        >
-          <span class="button__text">ок</span>
-        </button>
+        <form method="dialog" class="pop-up-close">
+          <button class="button pop-up-button">
+            <span class="button__text">ок</span>
+          </button>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
